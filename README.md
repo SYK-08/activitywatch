@@ -93,15 +93,15 @@
 
 ## About
 
-The goal of ActivityWatch is simple: *Enable the collection of as much valuable lifedata as possible without compromising user privacy.*
+The goal of ActivityWatch is simple: *Enable the collection of as much valuable life-data as possible without compromising user privacy.*
 
-We've worked towards this goal by creating an application for safe storage of the data on the user's local machine and as well as a set of watchers which record data such as:
+We've worked towards this goal by creating an application for safe storage of the data on the user's local machine as well as a set of watchers that record data such as:
 
  - Currently active application and the title of its window
  - Currently active browser tab and its title and URL
  - Keyboard and mouse activity, to detect if you are AFK ("away from keyboard") or not
 
-It is up to you as user to collect as much as you want, or as little as you want (and we hope some of you will help write watchers so we can collect more).
+It is up to you as a user to collect as much as you want, or as little as you want (and we hope some of you will help write watchers so we can collect more).
 
 ### Screenshots
 
@@ -128,7 +128,7 @@ Yes, but we found that most time trackers lack one or more important features.
  - Not open source
  - The user does not own the data (common with non-open source options)
  - Lack of synchronization (and when available: it's centralized and the sync server knows everything)
- - Difficult to setup/use (most open source options tend to target programmers)
+ - Difficult to setup/use (most open-source options tend to target programmers)
  - Low data resolution (low level of detail, does not store raw data, long intervals between entries)
  - Hard or impossible to extend (collecting more data is not as simple as it could be)
 
@@ -187,7 +187,7 @@ This repo is a bundle of the core components and official modules of ActivityWat
 
 ### Server
 
-`aw-server` is the official implementation of the core service which the other ActivityWatch services interact with. It provides a REST API to a datastore and query engine. It also serves the web interface developed in the `aw-webui` project (which provides the frontend part of the webapp).
+`aw-server` is the official implementation of the core service which the other ActivityWatch services interact with. It provides a REST API to a datastore and query engine. It also serves the web interface developed in the `aw-webui` project (which provides the frontend part of the web app).
 
 The REST API includes:
 
@@ -204,7 +204,7 @@ The webapp includes:
 
 ActivityWatch comes pre-installed with two watchers:
 
- - `aw-watcher-afk` tracks the user active/inactive state from keyboard and mouse input
+ - `aw-watcher-afk` tracks the user's active/inactive state from keyboard and mouse input
  - `aw-watcher-window` tracks the currently active application and its window title.
 
 There are lots of other watchers for ActivityWatch which can track more types of activity. Like `aw-watcher-web` which tracks time spent on websites, multiple editor watchers which track spent time coding, and many more! A full list of watchers can be found in [the documentation](https://docs.activitywatch.net/en/latest/watchers.html).
